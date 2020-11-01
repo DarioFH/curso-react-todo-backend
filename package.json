@@ -1,9 +1,13 @@
 {
     "name": "todoapp",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "src/loader.js",
     "author": "Dario <daarriio.o@hotmail.com>",
     "license": "MIT",
+    "scripts": {
+        "dev": "nodemon",
+        "production": "pm2 start src/loader.js --name todo-app"
+    },
     "dependencies": {
       "body-parser": "1.15.2",
       "express": "4.14.0",
